@@ -9,6 +9,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
 }
 
 .header__logo {
@@ -18,7 +22,7 @@ header {
 a {
     text-decoration: none;
     color: #213053;
-  }
+}
 
 header a {
 font-size: 15px;
@@ -27,16 +31,16 @@ margin-right: 25px;
 }
 
 button {
-    font-family: 'Raleway', sans—serif;
-    font-size: 15px;
-    color: #fff;
-    background-color: #23a030;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
-    padding: 15px;
-  }
+  font-family: 'Raleway', sans—serif;
+  font-size: 15px;
+  color: #fff;
+  background-color: #23a030;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
+  padding: 15px;
+}
 
 button:hover {
   background-color: #f6980c;
@@ -46,157 +50,234 @@ button:hover {
   transition: background-color 1s ease;
 }
 
-  .about__image {
-    width: 500px;
+.about__image {
+  width: 500px;
+}
+  
+.about__sun-image {
+  width: 100px;
+  height: 100px;
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 115px;
+  padding-top: 115px;
+}
+
+.about h1 {
+  font-size: 70px;
+  line-height: 76px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 30px;
+  opacity: 0.8;
+}
+
+.about button {
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 20px 25px;
+  margin-top: 20px;
+}
+
+.about__info {
+  max-width: 550px;
+}
+
+.about {
+  /* ... */
+  background: url('img/back.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.form__container {
+  width: 550px;
+}
+
+.form {
+  background-color: #1D263A;
+  color: #fff;
+  padding-top: 115px; 
+  padding-bottom: 115px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form h1 {
+  font-size: 48px;
+}
+
+.form p {
+  font-size: 18px;
+  opacity: 0.65;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form form{
+  display: grid;
+  grid-gap: 20PX;
+  margin-top: 60px;
+}
+
+.form label {
+  font-size: 18px;
+  font-weight: 600px;
+  margin-bottom: 15px;
+}
+
+.form input {
+  font-size: 18px;
+  color: #213053;
+  padding: 15px;
+  border-radius: 15px;
+  border: none;
+}
+
+.form select {
+  font-size: 18px;
+  color: #213053;
+  padding: 15px;
+  border-radius: 15px;
+  border: none;
+}
+
+.form__submit {
+  font-size: 18px;
+  font-weight: 600px;
+  margin-top: 40px;
+}
+
+select {
+  appearance: none;
+}
+
+input {
+  outline: none;
+}
+
+footer {
+  padding: 90px 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;    
+}
+
+.footer__copyright {
+  margin-top: 40px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.footer__group {
+  margin-right: 80px;
+}
+
+.footer__group h3 {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;    
+}
+
+.footer__links a {
+  margin-bottom: 15px;  
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
   }
-   
-  .about__sun-image {
-    width: 100px;
-    height: 100px;
+  100% {
+    transform: rotate(360deg);
+
   }
+}
+
+.about__sun-image {
+  animation: rotation 10s linear infinite;
+  position: absolute;
+}
+  
+@media (max-width: 720px) {
+  header {
+      padding: 10px;
+  }
+
+  .header__logo {
+      height: 20px;
+  }
+
+  header a {
+      margin-right: 10px;
+  }
+
   .about {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-bottom: 115px;
-    padding-top: 115px;
+      flex-direction: column-reverse;
+      padding: 50px 10px;
   }
 
   .about h1 {
-    font-size: 70px;
-    line-height: 76px;
+      font-size: 36px;
+      line-height: 40px;
   }
 
-  .about p {
-    font-size: 18px;
-    line-height: 30px;
-    opacity: 0.8;
+  .about__image {
+      width: 280px;
   }
 
-  .about button {
-    font-size: 18px;
-    border-radius: 20px;
-    padding: 20px 25px;
-    margin-top: 20px;
-  }
-
-  .about__info {
-    max-width: 550px;
-  }
-
-  .about {
-    /* ... */
-    background: url('img/back.png') no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .form__container {
-    width: 550px;
+  .about__sun-image {
+      width: 75px;
+      height: 75px;
   }
 
   .form {
-    background-color: #1D263A;
-    color: #fff;
-    padding-top: 115px; 
-    padding-bottom: 115px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+      padding: 50px 10px;
   }
 
   .form h1 {
-    font-size: 48px;
-  }
-
-  .form p {
-    font-size: 18px;
-    opacity: 0.65;
-  }
-
-  .form__group {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-  }
-
-  .form form{
-    display: grid;
-    grid-gap: 20PX;
-    margin-top: 60px;
-  }
-
-  .form label {
-    font-size: 18px;
-    font-weight: 600px;
-    margin-bottom: 15px;
-  }
-
-  .form input {
-    font-size: 18px;
-    color: #213053;
-    height: 60px;
-    padding: 0px 0px 20px 20px;
-    border-radius: 15px;
-    border: none;
-  }
-
-  .form select {
-    font-size: 18px;
-    color: #213053;
-    height: 60px;
-    padding: 0px 0px 20px 20px;
-    border-radius: 15px;
-    border: none;
-  }
-
-  .form__submit {
-    font-size: 18px;
-    font-weight: 600px;
-    margin-top: 40px;
-  }
-
-  select {
-    appearance: none;
-  }
-
-  input {
-    outline: none;
+      font-size: 36px;
   }
 
   footer {
-    padding: 90px 20px;
-    font-size: 16px;
-    font-weight: 600;
+      padding: 50px 10px;
   }
 
   .footer__container {
-    display: flex;
-    justify-content: center;    
+      flex-direction: column;
   }
+}
 
-  .footer__copyright {
-    margin-top: 40px;
-    text-align: center;
-    opacity: 0.5;
+@keyframes entry {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
 
-  .footer__group {
-    margin-right: 80px;
   }
+}
 
-  .footer__group h3 {
-    font-size: 16px;
-    opacity: 0.7;
-    margin-bottom: 30px;
-  }
-
-  .footer__links {
-    display: flex;
-    flex-direction: column;    
-  }
-
-  .footer__links a {
-    margin-bottom: 15px;  
-  }
+.about {
+  animation-name: entry;
+  animation-duration:  2s;
+}
