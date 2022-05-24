@@ -2,9 +2,12 @@
 <html lang="ru">
     <head>
         <title>Солнечные батареи GreenCorp</title>
-        <link rel="stylesheet" href="main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    </head>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>        
+      </head>
     <body>
         <header>
             <img class="header__logo" src="img/logo.svg">
@@ -14,15 +17,70 @@
             </div>
         </header>
         <section class="about">
-            <div class="about__info">
+            <div class="about__info animate__animated animate__slideInLeft">
               <h1>Солнечные панели GreenRobotic</h1>
               <p>Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
-              <button class="ease">Узнать подробнее</button>
+              <button class="ease">Узнать подробнее<i class="fas fa-chevron-right"></i></button>
             </div>
-            <div class="about__images">
+            <div class="about__images animate__animated animate__slideInRight">
               <img class="about__sun-image" src="img/sun.png">
               <img class="about__image" src="img/solar-panel.png">
             </div>
+        </section>
+        <section class="features" id="features">
+          <div class="cards">
+            <div class="card">
+              <div class="card__logo"></div>
+              <h3>Уменьшите счета за электричество</h3>
+              <p>Используйте чистую солнечную энергию для питания<br> своего дома: уменьшите зависимость от электросети<br> и счета за электричество</p>
+            </div>
+            <div class="card">
+              <div class="card__logo"></div>
+              <h3>Мониторинг электроэнергии</h3>
+              <p>Управляйте своей системой солнечных панелей из любой точки мира с помощью специального мобильного приложения</p>
+            </div>
+            <div class="card">
+              <div class="card__logo"></i></div>
+              <h3>Максимальная эффективность</h3>
+              <p>Солнечные панели GreenRobotic обеспечивают максимальное производство энергии круглый год, даже на крышах со сложными углами</p>
+            </div>
+          </div>
+          <div class="features__border"></div>
+          <div class="features__feedback">
+            <div class="features__feedback-left">
+              <h2>Нам доверяет<br> 5000+ счастливых клиентов</h2>
+              <p>Мы помогли тысячам людей перейти на зеленую энергию.<br>
+              После заказа мы позаботимся обо всем: доставка панелей, проект, установка, помощь в<br> использовании</p>              
+            </div>
+            <div class="features__feedback-right">
+              <div class="features__box features__savings-box">
+                <h3>30 млн ₽</h3>
+                <p>Помогаем экономить нашим клиентам<br> ежемесячно</p>
+              </div>
+              <div class="features__box features__rate-box">
+                <h3>4.7</h3>
+                <p class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="#ff7039"><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="#ff7039"><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="#ff7039"><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="#ff7039"><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="#ff7039"><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
+                </p>
+                <p>Средняя оценка наших<br> клиентов</p>
+              </div>
+            </div>
+        </div>
+        </section>
+        <section class="promo">
+          <div class="promo__image"><img src="/img/promo.jpg" width="843" height="650" alt=""></div>
+          <div class="promo__right">
+            <div class="promo__right__card">
+              <h2>Зарядите свой дом</h2>              
+              <p><span><div class="circle"></div></span>Солнечные панели сертифицированы мировыми экспертами: система безопасна и надежна</p>
+              <p><span><div class="circle"></div></span> Следите за накоплением энергии вашего дома в режиме реального времени и настраивайте процент расхода и накопления энергии</p>
+              <div class="ease promo__right__card__button"><button>Заказать<i class="fa fa-chevron-right"></i></button></div>
+            </div>
+          </div>
         </section>
         <section class="form">
           <div class="form__containter">
